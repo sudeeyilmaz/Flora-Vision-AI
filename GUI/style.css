@@ -1,0 +1,431 @@
+/* Genel Stil */
+:root {
+    --primary-color: #4CAF50; /* Canlı Yeşil */
+    --primary-dark: #388E3C;
+    --secondary-color: #FFC107; /* Sarı */
+    --text-color: #333;
+    --light-text-color: #666;
+    --bg-light: #f8f9fa;
+    --bg-darker: #e9ecef;
+    --card-bg: #ffffff;
+    --border-color: #dee2e6;
+    --shadow-light: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+body {
+    background-image: url('/static/background9.jpg');
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-light);
+    color: var(--text-color);
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* İçeriğin üstten başlaması için */
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: var(--shadow-light);
+    padding: 40px;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 20px; /* Üstten boşluk */
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-dark);
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.8em;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 10px;
+    margin-top: 40px;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* İkon ile metin arasına boşluk */
+}
+
+.description {
+    color: var(--light-text-color);
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+/* Yükleme Alanı */
+.upload-section {
+    margin-bottom: 30px;
+}
+
+.upload-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px dashed var(--border-color);
+    border-radius: 12px;
+    padding: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: var(--bg-light);
+    height: 150px; /* Sabit yükseklik */
+}
+
+.upload-box:hover {
+    border-color: var(--primary-color);
+    background-color: #e6f7e6; /* Hafif yeşil arka plan */
+}
+
+.upload-icon {
+    font-size: 3em;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.hidden-input {
+    display: none;
+}
+
+.file-name-display {
+    margin-top: 15px;
+    font-size: 0.95em;
+    color: var(--light-text-color);
+    font-weight: 600;
+}
+
+.image-preview-container {
+    margin-top: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden; /* Taşmayı önle */
+    max-width: 300px; /* Önizleme boyutu */
+    max-height: 300px; /* Önizleme boyutu */
+    margin-left: auto;
+    margin-right: auto;
+    display: block; /* Ortalamak için */
+    box-shadow: var(--shadow-light);
+}
+
+.image-preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Resmi kutuya sığdır */
+    display: block; /* img elementinin altındaki boşluğu kaldır */
+}
+
+/* Analiz Butonu */
+.analyze-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    margin-top: 25px;
+    box-shadow: var(--shadow-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.analyze-button:hover:not(:disabled) {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+}
+
+.analyze-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+/* Bilgi Butonu Stili */
+.info-button {
+    display: block;
+    margin: 10px;
+    padding: 8px 15px;
+    background-color: var(--secondary-color); /* Sarı renk */
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.9em;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.info-button:hover {
+    background-color: #fdd835; /* Daha koyu sarı */
+}
+
+.info-button i {
+    margin-left: 5px;
+}
+/* Sonuç Galerisi */
+.results-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.results-gallery p {
+    text-align: center;
+    grid-column: 1 / -1; /* Tek satırı kapla */
+    color: var(--light-text-color);
+}
+
+.result-item {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: var(--shadow-light);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* İçeriği yay */
+}
+
+.result-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.result-item img {
+    width: 100%;
+    height: 150px; /* Sabit resim yüksekliği */
+    object-fit: cover; /* Resmi kutuya sığdır */
+    border-bottom: 1px solid var(--border-color);
+}
+
+.result-item p {
+    margin: 8px 0;
+    padding: 0 10px;
+    font-size: 0.95em;
+    color: var(--text-color);
+}
+
+.result-item .similarity-score {
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    padding: 0 10px 10px;
+}
+
+/* Duyarlılık (Responsive) */
+@media (max-width: 768px) {
+    .container {
+        padding: 25px;
+        margin-top: 10px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    .analyze-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+    .upload-box {
+        padding: 20px;
+    }
+    .upload-icon {
+        font-size: 2.5em;
+    }
+}
+
+/* Yükleme Spinner'ı için */
+.analyze-button .spinner {
+    display: none;
+    margin-left: 10px;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+}
+
+.analyze-button:disabled .spinner {
+    display: block;
+}
+
+.analyze-button:disabled .fas.fa-search {
+    display: none; /* Arama ikonunu gizle */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+/* --- YENİ EKLENECEK KODLAR --- */
+
+/* Ana Yerleşim (Sol/Sağ Panelleri İçerir) */
+.main-layout {
+    display: flex;
+    gap: 30px; /* Paneller arası boşluk */
+    text-align: left; /* İçerik soldan başlasın */
+    margin-top: 20px;
+}
+
+/* Sol Panel (Yükleme) */
+.left-panel {
+    flex: 1; /* Esnekliği 1 birim (Sağ panel ile eşit genişlik) */
+    padding: 15px;
+    border-right: 1px solid var(--border-color); /* Hafif ayırıcı çizgi */
+    min-width: 300px; /* Panelin minimum genişliği */
+}
+
+/* Sağ Panel (Sonuçlar) */
+.right-panel {
+    flex: 1; /* Esnekliği 1 birim */
+    padding: 15px;
+}
+
+/* Panel Başlıkları için ayarlamalar (h2) */
+.left-panel h2, 
+.right-panel h2 {
+    margin-top: 0; /* Panellerin üstündeki başlıklar için boşluğu sıfırla */
+    justify-content: flex-start; /* Başlığı sola hizala */
+}
+
+/* Yükleme ve Önizleme Alanlarının Düzenlenmesi */
+.preview-analysis-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Önizleme Konteynerını Soldaki Panele Sığdır */
+.image-preview-container {
+    max-width: 100%; /* Sol panelin tamamını kaplasın */
+    height: auto;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Analiz Butonunu Soldaki Panele Sığdır */
+.analyze-button {
+    width: 100%; /* Sol panelin tamamını kaplasın */
+    max-width: 300px; /* Maksimum genişliği koruyalım */
+}
+/* GUI/style.css dosyanıza ekleyin/güncelleyin: */
+
+/* Konum Butonu */
+.location-button {
+    display: block;
+    margin: 5px auto;
+    padding: 8px 15px;
+    background-color: #007bff; /* Mavi (Konum için standart) */
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.9em;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+    width: 90%; /* Genişlik ayarı */
+    box-sizing: border-box;
+}
+.location-button:hover {
+    background-color: #0056b3;
+}
+
+/* Yeni Satış Butonu */
+.sale-button {
+    display: block;
+    margin: 5px auto;
+    padding: 8px 15px;
+    background-color: var(--secondary-color); /* Sarı */
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.9em;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+    width: 90%; 
+    box-sizing: border-box;
+}
+.sale-button:hover {
+    background-color: #fdd835;
+}
+
+
+/* Genel Bilgi Butonu (info-button) */
+.info-button {
+    display: block;
+    margin: 10px auto;
+    padding: 8px 15px;
+    background-color: var(--bg-darker); /* Gri/Açık */
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.9em;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+    width: 90%; 
+    box-sizing: border-box;
+}
+.info-button:hover {
+    background-color: var(--border-color);
+}
+
+/* --- Duyarlılık (Responsive) İyileştirmesi --- */
+
+@media (max-width: 768px) {
+    .main-layout {
+        flex-direction: column; /* Mobil cihazlarda paneller alt alta dizilsin */
+        gap: 0;
+    }
+    
+    .left-panel {
+        border-right: none;
+        border-bottom: 2px solid var(--border-color); /* Altına ayırıcı çizgi ekle */
+        padding-bottom: 20px;
+    }
+    
+    .left-panel h2, 
+    .right-panel h2 {
+        justify-content: center; /* Mobil görünümde başlıkları tekrar ortala */
+    }
+    
+    .analyze-button {
+        max-width: 100%; /* Buton genişliğini mobil için ayarla */
+    }
+}

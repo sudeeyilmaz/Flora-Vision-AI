@@ -1,0 +1,716 @@
+{
+    "pink_primrose": {
+        "turkish_name": "Pembe Çuha Çiçeği",
+        "watering": "Toprağı sürekli nemli tutulmalı. Kış aylarında sulama azaltılmalıdır.",
+        "care": "Güneşli veya yarı gölge alanları tercih eder. Düşük sıcaklıklara dayanıklıdır.",
+        "grows_in_turkey": false,
+        "scientific_name": "Primula"
+    },
+    "hard-leaved_pocket_orchid": {
+        "turkish_name": "Sert Yapraklı Cep Orşidesi",
+        "watering": "Toprağı kurumaya yakın sulanmalı, aşırı sudan kaçınılmalıdır.",
+        "care": "Direkt güneş ışığından korunan aydınlık yerleri sever. Yüksek nem ister.",
+        "grows_in_turkey": false,
+        "scientific_name": "Epipactis"
+    },
+    "canterbury_bells": {
+        "turkish_name": "Çan Çiçeği",
+        "watering": "Haftada 2-3 kez derin sulama yapılmalıdır. Kök çürümesini önlemek önemlidir.",
+        "care": "Tam güneş veya hafif gölge alanları idealdir. İyi drene edilmiş toprağı sever.",
+        "grows_in_turkey": true,
+        "scientific_name": "Campanula"
+    },
+    "sweet_pea": {
+        "turkish_name": "Kokulu Bezelye (Nazlı Bezelye)",
+        "watering": "Sürekli nemli tutulmalıdır, özellikle çiçeklenme döneminde.",
+        "care": "Tam güneş alan yerlerde en iyi verimi verir. Tırmanması için destek gerekir.",
+        "grows_in_turkey": true,
+        "scientific_name": "Lathyrus odoratus"
+    },
+    "english_marigold": {
+        "turkish_name": "İngiliz Kadife Çiçeği (Nergis)",
+        "watering": "İlk ekimde bol sulanır, sonra kuraklığa dayanıklıdır. Aşırı sulama yapmayın.",
+        "care": "Güneşli yerleri sever. Kolay bakımı vardır.",
+        "grows_in_turkey": true,
+        "scientific_name": "Calendula officinalis"
+    },
+    "tiger_lily": {
+        "turkish_name": "Kaplan Zambağı",
+        "watering": "Toprağı nemli tutulmalı, aşırı sulama engellenmelidir.",
+        "care": "Yarı gölge veya tam güneş sever. Soğuğa dayanıklıdır.",
+        "grows_in_turkey": true,
+        "scientific_name": "Lilium tigrinum"
+    },
+    "moon_orchid": {
+        "turkish_name": "Ay Orşidesi",
+        "watering": "Yazın sık, kışın seyrektir. Orkideler için özel sulama yöntemleri tercih edilmeli.",
+        "care": "Doğrudan ışık almayan, aydınlık ortam ve yüksek nem önemlidir.",
+        "grows_in_turkey": false,
+        "scientific_name": "Phalaenopsis"
+    },
+    "bird_of_paradise": {
+        "turkish_name": "Cennet Kuşu Çiçeği",
+        "watering": "Yaz aylarında bol sulama ister. Kışın sulamayı azaltın.",
+        "care": "Bol güneşli ve sıcak ortamları sever. Rüzgardan korunmalıdır.",
+        "grows_in_turkey": false,
+        "scientific_name": "Strelitzia reginae"
+    },
+    "monkshood": {
+        "turkish_name": "Keşiş Başlığı",
+        "watering": "Toprağı sürekli nemli tutulmalı, kurumasından kaçınılmalıdır.",
+        "care": "Güneşli veya kısmi gölge alanları tercih eder. Zehirli bir bitkidir.",
+        "grows_in_turkey": true,
+        "scientific_name": "Aconitum"
+    },
+    "globe_thistle": {
+        "turkish_name": "Top Devedikeni",
+        "watering": "Kuraklığa dayanıklıdır. Toprağı kurudukça sulama yapılmalıdır.",
+        "care": "Tam güneş alan yerleri tercih eder. Kolay ve az bakım ister.",
+        "grows_in_turkey": true,
+        "scientific_name": "Echinops"
+    },
+    "snapdragon": {
+        "turkish_name": "Aslanağzı",
+        "watering": "Düzenli sulama ister, özellikle çiçeklenme döneminde.",
+        "care": "Bol güneş ve iyi drene edilmiş toprak ister.",
+        "grows_in_turkey": true,
+        "scientific_name": "Antirrhinum"
+    },
+    "colt's_foot": {
+        "turkish_name": "Öksürük Otu",
+        "watering": "Çok fazla suya ihtiyaç duymaz, nemli toprak yeterlidir.",
+        "care": "Güneşli veya kısmi gölge yerlerde büyür.",
+        "grows_in_turkey": true,
+        "scientific_name": "Tussilago farfara"
+    },
+    "king_protea": {
+        "turkish_name": "Kral Proteası",
+        "watering": "Sulama arasında toprağın kurumasına izin verilmelidir.",
+        "care": "Güneşli yerleri ve asidik toprağı sever.",
+        "grows_in_turkey": false,
+        "scientific_name": "Protea cynaroides"
+    },
+    "spear_thistle": {
+        "turkish_name": "Mızrak Devedikeni",
+        "watering": "Yabani bir tür olduğu için ek sulamaya nadiren ihtiyaç duyar.",
+        "care": "Her türlü toprakta yetişebilir. Güneşli yerleri tercih eder.",
+        "grows_in_turkey": true,
+        "scientific_name": "Cirsium vulgare"
+    },
+    "yellow_iris": {
+        "turkish_name": "Sarı Süsen",
+        "watering": "Bataksılık ve nemli ortamları sever. Kuraklığa dayanıksızdır.",
+        "care": "Tam güneş veya kısmi gölge alanları tercih eder.",
+        "grows_in_turkey": true,
+        "scientific_name": "Iris pseudacorus"
+    },
+    "globe-flower": {
+        "turkish_name": "Top Çiçeği",
+        "watering": "Toprağı daima nemli olmalıdır, özellikle sıcak havalarda.",
+        "care": "Güneşli veya hafif gölge alanları idealdir.",
+        "grows_in_turkey": true,
+        "scientific_name": "Trollius"
+    },
+    "purple_coneflower": {
+        "turkish_name": "Mor Konik Çiçek (Ekinezya)",
+        "watering": "Kuraklığa dayanıklıdır. Toprak tamamen kuruduktan sonra sulanmalıdır.",
+        "care": "Tam güneşli yerleri sever. Tohumdan kolayca çoğalır.",
+        "grows_in_turkey": true,
+        "scientific_name": "Echinacea purpurea"
+    },
+    "peruvian_lily": {
+        "turkish_name": "Peru Zambağı (Alstroemeria)",
+        "watering": "Düzenli sulama ile toprağı nemli tutulmalıdır.",
+        "care": "Güneşli veya kısmi gölge yerlerde iyi gelişir.",
+        "grows_in_turkey": false,
+        "scientific_name": "Alstroemeria"
+    },
+    "balloon_flower": {
+        "turkish_name": "Balon Çiçeği",
+        "watering": "Orta düzeyde sulama ister. Toprağın kurumasına izin verin.",
+        "care": "Tam güneş veya hafif gölge alanları sever.",
+        "grows_in_turkey": false,
+        "scientific_name": "Platycodon grandiflorus"
+    },
+    "giant_white_arum_lily": {
+        "turkish_name": "Dev Beyaz Arap Zambağı",
+        "watering": "Büyüme döneminde toprağı çok nemli tutulmalıdır.",
+        "care": "Bol güneşli veya hafif gölge alanları sever.",
+        "grows_in_turkey": false,
+        "scientific_name": "Zantedeschia aethiopica"
+    },
+    "fire_lily": {
+        "turkish_name": "Ateş Zambağı",
+        "watering": "Toprağı düzenli olarak nemli tutulmalıdır.",
+        "care": "Güneşli ve iyi drene edilmiş toprağı tercih eder.",
+        "grows_in_turkey": false,
+        "scientific_name": "Lilium bulbiferum"
+    },
+    "pincushion_flower": {
+        "turkish_name": "İğnelik Çiçeği",
+        "watering": "Kuraklığa dayanıklıdır, az sulama yapılmalıdır.",
+        "care": "Tam güneşli ortamları sever.",
+        "grows_in_turkey": true,
+        "scientific_name": "Scabiosa"
+    },
+    "fritillary": {
+        "turkish_name": "Keklik Lalesi",
+        "watering": "Kış ve ilkbaharda düzenli sulama ister, yazın dinlenmeye bırakılmalıdır.",
+        "care": "Güneşli veya yarı gölge alanları sever.",
+        "grows_in_turkey": true,
+        "scientific_name": "Fritillaria"
+    },
+    "red_ginger": {
+        "turkish_name": "Kırmızı Zencefil Çiçeği",
+        "watering": "Sürekli nemli ve ıslak toprağı sever.",
+        "care": "Sıcak ve nemli ortamları tercih eder. Kışın koruma ister.",
+        "grows_in_turkey": false,
+        "scientific_name": "Alpinia purpurata"
+    },
+    "grape_hyacinth": {
+        "turkish_name": "Misk Sümbülü",
+        "watering": "Sonbahar ve ilkbaharda orta derecede sulama ister.",
+        "care": "Tam güneşli yerleri sever. Bakımı kolaydır.",
+        "grows_in_turkey": true,
+        "scientific_name": "Muscari"
+    },
+    "corn_poppy": {
+        "turkish_name": "Gelincik",
+        "watering": "Kuraklığa dayanıklıdır, fazla suya ihtiyaç duymaz.",
+        "care": "Güneşli tarlaları ve yol kenarlarını sever. Bakımı zahmetsizdir.",
+        "grows_in_turkey": true,
+        "scientific_name": "Papaver rhoeas"
+    },
+    "prince_of_wales_feathers": {
+        "turkish_name": "Galler Prensi Tüyleri (Gümüş Horoz İbiği)",
+        "watering": "Toprağın düzenli olarak nemli tutulması önemlidir.",
+        "care": "Tam güneşli ve sıcak ortamları tercih eder.",
+        "grows_in_turkey": false,
+        "scientific_name": "Celosia argentea"
+    },
+    "stemless_gentian": {
+        "turkish_name": "Saplı Centiyana",
+        "watering": "Toprağı her zaman hafif nemli olmalıdır.",
+        "care": "Yüksek rakımlı güneşli bölgeleri ve drenajı iyi toprağı sever.",
+        "grows_in_turkey": true,
+        "scientific_name": "Gentiana acaulis"
+    },
+    "artichoke": {
+        "turkish_name": "Enginar Çiçeği",
+        "watering": "Büyüme döneminde düzenli ve bol sulama ister.",
+        "care": "Tam güneşli yerleri ve derin toprağı tercih eder.",
+        "grows_in_turkey": true,
+        "scientific_name": "Cynara cardunculus"
+    },
+    "sweet_william": {
+        "turkish_name": "Hevaz Gelini (Güzellik Çiçeği)",
+        "watering": "Orta derecede sulama ister, toprağın kurumasına izin verilmelidir.",
+        "care": "Güneşli veya kısmi gölge alanları sever.",
+        "grows_in_turkey": true,
+        "scientific_name": "Dianthus barbatus"
+    },
+    "carnation": {
+        "turkish_name": "Karanfil",
+        "watering": "Toprağı düzenli olarak nemli tutulmalıdır.",
+        "care": "Bol güneşli ortamları ve hafif alkali toprağı sever.",
+        "grows_in_turkey": true,
+        "scientific_name": "Dianthus caryophyllus"
+    },
+    "garden_phlox": {
+        "turkish_name": "Bahçe Alev Çiçeği (Floks)",
+        "watering": "Toprağı sürekli nemli kalmalıdır, özellikle yazın.",
+        "care": "Tam güneşli yerleri ve iyi hava sirkülasyonunu sever.",
+        "grows_in_turkey": true,
+        "scientific_name": "Phlox paniculata"
+    },
+    "love_in_the_mist": {
+        "turkish_name": "Çörek Otu",
+        "watering": "Kuraklığa dayanıklıdır. İlk ekimde sulanması yeterlidir.",
+        "care": "Tam güneşli yerleri sever. Yeniden tohumlanarak kolayca çoğalır.",
+        "grows_in_turkey": true,
+        "scientific_name": "Nigella damascena"
+    },
+    "mexican_aster": {
+        "turkish_name": "Meksika Asteri",
+        "watering": "Toprağı sürekli nemli tutulmalıdır.",
+        "care": "Tam güneş alan yerleri sever. Soğuğa dayanıklılığı azdır.",
+        "grows_in_turkey": false,
+        "scientific_name": "Cosmos bipinnatus"
+    },
+    "alpine_sea_holly": {
+        "turkish_name": "Alp Denizi Kızılağacı",
+        "watering": "Kuraklığa çok dayanıklıdır. Fazla suya ihtiyacı yoktur.",
+        "care": "Güneşli ve iyi drene edilmiş toprağı tercih eder.",
+        "grows_in_turkey": true,
+        "scientific_name": "Eryngium alpinum"
+    },
+    "ruby-lipped_cattleya": {
+        "turkish_name": "Yakut Dudaklı Cattleya",
+        "watering": "Yazın sık, kışın nadiren sulama ister. Kabuğu kurumalıdır.",
+        "care": "Aydınlık ama direkt güneş almayan yerleri ve yüksek nemi sever.",
+        "grows_in_turkey": false,
+        "scientific_name": "Cattleya labiata"
+    },
+    "cape_flower": {
+        "turkish_name": "Kap Çiçeği",
+        "watering": "Toprağı hafif nemli tutulmalı, aşırı sulamadan kaçınılmalıdır.",
+        "care": "Parlak dolaylı ışık veya kısmi gölge alanları sever.",
+        "grows_in_turkey": false,
+        "scientific_name": "Gazania rigens"
+    },
+    "great_masterwort": {
+        "turkish_name": "Büyük Yıldız Otu",
+        "watering": "Toprağın nemli tutulması önemlidir. Kurumasından kaçınılmalıdır.",
+        "care": "Kısmi gölge ve serin yerleri tercih eder.",
+        "grows_in_turkey": true,
+        "scientific_name": "Astrantia major"
+    },
+    "siam_tulip": {
+        "turkish_name": "Siyam Lalesi",
+        "watering": "Büyüme döneminde bol sulama ister. Kışın sulama kesilmelidir.",
+        "care": "Sıcak ve nemli ortamları, parlak dolaylı ışığı sever.",
+        "grows_in_turkey": false,
+        "scientific_name": "Curcuma alismatifolia"
+    },
+    "lenten_rose": {
+        "turkish_name": "Kış Gülü (Helleborus)",
+        "watering": "Toprağı düzenli nemli tutulmalıdır.",
+        "care": "Kısmi gölge yerleri ve soğuk hava koşullarını tercih eder.",
+        "grows_in_turkey": true,
+        "scientific_name": "Helleborus orientalis"
+    },
+    "barbeton_daisy": {
+        "turkish_name": "Barbeton Papatyası (Gerbera)",
+        "watering": "Toprağın üst kısmı kuruyunca sulama yapılmalıdır.",
+        "care": "Tam güneşli yerleri sever. Soğuktan korunmalıdır.",
+        "grows_in_turkey": false,
+        "scientific_name": "Gerbera jamesonii"
+    },
+    "daffodil": {
+        "turkish_name": "Nergis",
+        "watering": "Çiçeklenme döneminde toprağı nemli tutulmalıdır.",
+        "care": "Tam güneşli veya yarı gölge yerleri sever. Bakımı kolaydır.",
+        "grows_in_turkey": true,
+        "scientific_name": "Narcissus"
+    },
+    "sword_lily": {
+        "turkish_name": "Kılıç Zambağı (Gladioli)",
+        "watering": "Haftada bir derin sulama ister, toprağı sürekli nemli tutulmalıdır.",
+        "care": "Tam güneşli ve rüzgardan korunaklı yerleri sever.",
+        "grows_in_turkey": false,
+        "scientific_name": "Gladiolus"
+    },
+    "poinsettia": {
+        "turkish_name": "Atatürk Çiçeği",
+        "watering": "Toprağı hafif nemli tutulmalı, aşırı sulamadan kaçınılmalıdır.",
+        "care": "Aydınlık ve sıcak ortamları sever. Ani sıcaklık değişimlerinden korunmalıdır.",
+        "grows_in_turkey": false,
+        "scientific_name": "Euphorbia pulcherrima"
+    },
+    "bolero_deep_blue": {
+        "turkish_name": "Bolero Koyu Mavi Çiçeği",
+        "watering": "Toprağın düzenli olarak nemli kalması gerekir.",
+        "care": "Güneşli veya hafif gölge alanları tercih eder.",
+        "grows_in_turkey": false,
+        "scientific_name": "Nemesia 'Bolero Deep Blue'"
+    },
+    "wallflower": {
+        "turkish_name": "Şebboy",
+        "watering": "Toprak kurudukça sulama yapılmalıdır, kuraklığa dayanıklıdır.",
+        "care": "Tam güneşli yerleri ve iyi drene edilmiş toprağı sever.",
+        "grows_in_turkey": true,
+        "scientific_name": "Erysimum cheiri"
+    },
+    "marigold": {
+        "turkish_name": "Kadife Çiçeği",
+        "watering": "Toprağı düzenli nemli tutulmalıdır.",
+        "care": "Tam güneşli ortamları sever. Bakımı kolay ve hızlı büyür.",
+        "grows_in_turkey": true,
+        "scientific_name": "Tagetes"
+    },
+    "buttercup": {
+        "turkish_name": "Düğün Çiçeği",
+        "watering": "Toprağı sürekli nemli olmalıdır, bataklık ortamları sever.",
+        "care": "Güneşli veya kısmi gölge alanlarını tercih eder.",
+        "grows_in_turkey": true,
+        "scientific_name": "Ranunculus"
+    },
+    "oxeye_daisy": {
+        "turkish_name": "Sığır Gözü Papatyası",
+        "watering": "Kuraklığa dayanıklıdır, fazla suya ihtiyaç duymaz.",
+        "care": "Güneşli çayırları ve iyi drene edilmiş toprağı sever.",
+        "grows_in_turkey": true,
+        "scientific_name": "Leucanthemum vulgare"
+    },
+    "common_dandelion": {
+        "turkish_name": "Karahindiba",
+        "watering": "Doğal koşullarda suya ihtiyacı vardır, ama ek sulama genellikle gerekmez.",
+        "care": "Her türlü ortamda yetişir, çok dayanıklıdır.",
+        "grows_in_turkey": true,
+        "scientific_name": "Taraxacum officinale"
+    },
+    "petunia": {
+        "turkish_name": "Petunya",
+        "watering": "Sık sulama ister, özellikle yaz aylarında toprağı nemli tutulmalıdır.",
+        "care": "Bol güneşli yerleri ve rüzgardan korunaklı ortamları sever.",
+        "grows_in_turkey": false,
+        "scientific_name": "Petunia"
+    },
+    "wild_pansy": {
+        "turkish_name": "Yabani Hercai Menekşe",
+        "watering": "Toprağı düzenli olarak nemli tutulmalıdır.",
+        "care": "Güneşli veya yarı gölge yerleri sever. Soğuğa dayanıklıdır.",
+        "grows_in_turkey": true,
+        "scientific_name": "Viola tricolor"
+    },
+    "primula": {
+        "turkish_name": "Çuha Çiçeği",
+        "watering": "Toprağı sürekli nemli tutulmalıdır. Kışın sulamayı azaltın.",
+        "care": "Güneşli veya yarı gölge alanları tercih eder. Düşük sıcaklıklara dayanıklıdır.",
+        "grows_in_turkey": true,
+        "scientific_name": "Primula"
+    },
+    "sunflower": {
+        "turkish_name": "Ayçiçeği",
+        "watering": "Büyüme döneminde bol ve derin sulama ister.",
+        "care": "Tam güneşli, sıcak ortamları ve zengin toprağı sever.",
+        "grows_in_turkey": true,
+        "scientific_name": "Helianthus annuus"
+    },
+    "pelargonium": {
+        "turkish_name": "Sardunya",
+        "watering": "Toprağı kuruduktan sonra sulanmalıdır. Kışın çok az sulama yapılır.",
+        "care": "Tam güneşli ortamları sever. Budama ile teşvik edilir.",
+        "grows_in_turkey": true,
+        "scientific_name": "Pelargonium"
+    },
+    "bishop_of_llandaff": {
+        "turkish_name": "Llandaff Piskoposu Çiçeği",
+        "watering": "Büyüme döneminde düzenli sulama ister.",
+        "care": "Güneşli yerleri ve zengin toprağı sever. Soğuktan korunmalıdır.",
+        "grows_in_turkey": false,
+        "scientific_name": "Dahlia 'Bishop of Llandaff'"
+    },
+    "gaura": {
+        "turkish_name": "Yaz Çiçeği (Kelebek Çiçeği)",
+        "watering": "Kuraklığa dayanıklıdır. Toprak kurudukça sulanmalıdır.",
+        "care": "Tam güneşli yerleri ve iyi drene edilmiş toprağı tercih eder.",
+        "grows_in_turkey": false,
+        "scientific_name": "Oenothera lindheimeri"
+    },
+    "geranium": {
+        "turkish_name": "Itırşahı (Turnagagası)",
+        "watering": "Toprak kurudukça sulanmalıdır. Kışın sulama azaltılmalıdır.",
+        "care": "Güneşli veya kısmi gölge alanları sever. Bakımı kolaydır.",
+        "grows_in_turkey": true,
+        "scientific_name": "Geranium"
+    },
+    "orange_dahlia": {
+        "turkish_name": "Turuncu Yıldız Çiçeği (Dahlia)",
+        "watering": "Düzenli ve bol sulama ister.",
+        "care": "Tam güneşli yerleri sever. Soğuktan korunmalıdır.",
+        "grows_in_turkey": false,
+        "scientific_name": "Dahlia"
+    },
+    "pink-yellow_dahlia": {
+        "turkish_name": "Pembe-Sarı Yıldız Çiçeği (Dahlia)",
+        "watering": "Düzenli ve bol sulama ister.",
+        "care": "Tam güneşli yerleri sever. Soğuktan korunmalıdır.",
+        "grows_in_turkey": false,
+        "scientific_name": "Dahlia"
+    },
+    "cautleya_spicata": {
+        "turkish_name": "Cautleya Spicata",
+        "watering": "Toprağı her zaman nemli olmalıdır.",
+        "care": "Yarı gölge yerleri ve zengin, nemli toprağı sever.",
+        "grows_in_turkey": false,
+        "scientific_name": "Cautleya spicata"
+    },
+    "japanese_anemone": {
+        "turkish_name": "Japon Anemonu",
+        "watering": "Toprağı düzenli nemli tutulmalıdır.",
+        "care": "Kısmi gölge ve iyi drene edilmiş toprağı tercih eder.",
+        "grows_in_turkey": false,
+        "scientific_name": "Anemone hupehensis"
+    },
+    "black-eyed_susán": {
+        "turkish_name": "Kara Gözlü Suzan",
+        "watering": "Kuraklığa dayanıklıdır. Toprak kurudukça sulanmalıdır.",
+        "care": "Tam güneşli yerleri ve sıcak ortamları sever.",
+        "grows_in_turkey": false,
+        "scientific_name": "Rudbeckia hirta"
+    },
+    "silverbush": {
+        "turkish_name": "Gümüş Çalısı",
+        "watering": "Kuraklığa çok dayanıklıdır. Az sulama ister.",
+        "care": "Tam güneşli yerleri ve fakir toprağı sever.",
+        "grows_in_turkey": false,
+        "scientific_name": "Convolvulus cneorum"
+    },
+    "osteospermum": {
+        "turkish_name": "Yıldız Yağmuru",
+        "watering": "Toprak kurudukça sulanmalıdır, kışın sulama azaltılır.",
+        "care": "Tam güneşli yerleri sever. Budama ile çiçeklenme teşvik edilir.",
+        "grows_in_turkey": false,
+        "scientific_name": "Osteospermum"
+    },
+    "spring_crocus": {
+        "turkish_name": "Bahar Çiğdemi",
+        "watering": "Çiçeklenme döneminde toprağı nemli tutulmalıdır.",
+        "care": "Güneşli veya kısmi gölge alanları sever. Soğuğa dayanıklıdır.",
+        "grows_in_turkey": true,
+        "scientific_name": "Crocus vernus"
+    },
+    "bearded_iris": {
+        "turkish_name": "Sakallı Süsen",
+        "watering": "Kuraklığa dayanıklıdır. Toprağın kurumasına izin verilmelidir.",
+        "care": "Tam güneşli yerleri ve iyi drene edilmiş toprağı sever.",
+        "grows_in_turkey": true,
+        "scientific_name": "Iris germanica"
+    },
+    "windflower": {
+        "turkish_name": "Rüzgar Çiçeği",
+        "watering": "Toprağı nemli tutulmalıdır.",
+        "care": "Güneşli veya kısmi gölge alanları tercih eder.",
+        "grows_in_turkey": true,
+        "scientific_name": "Anemone"
+    },
+    "tree_poppy": {
+        "turkish_name": "Ağaç Gelincik Çiçeği",
+        "watering": "Kuraklığa dayanıklıdır. Az sulama ister.",
+        "care": "Tam güneşli ve sıcak yerleri sever.",
+        "grows_in_turkey": false,
+        "scientific_name": "Romneya coulteri"
+    },
+    "gazania": {
+        "turkish_name": "Gazanya",
+        "watering": "Kuraklığa dayanıklıdır. Toprak kurudukça sulanmalıdır.",
+        "care": "Bol güneşli ve sıcak ortamları sever.",
+        "grows_in_turkey": false,
+        "scientific_name": "Gazania"
+    },
+    "azalea": {
+        "turkish_name": "Orman Gülü",
+        "watering": "Toprağı sürekli nemli olmalıdır, kireçsiz su tercih edilir.",
+        "care": "Yarı gölge yerleri ve asidik toprağı sever.",
+        "grows_in_turkey": true,
+        "scientific_name": "Rhododendron"
+    },
+    "water_lily": {
+        "turkish_name": "Nilüfer",
+        "watering": "Suda yaşadığı için sulama gerekmez.",
+        "care": "Göl veya havuzda tam güneşli yerleri tercih eder.",
+        "grows_in_turkey": true,
+        "scientific_name": "Nymphaea"
+    },
+    "rose": {
+        "turkish_name": "Gül",
+        "watering": "Toprağı nemli tutulmalıdır. Yazın daha sık sulama ister.",
+        "care": "Bol güneş sever. Düzenli budama ve besin takviyesi önemlidir.",
+        "grows_in_turkey": true,
+        "scientific_name": "Rosa"
+    },
+    "thorn_apple": {
+        "turkish_name": "Dikenli Elma (Datura)",
+        "watering": "Sıcak dönemlerde bol sulama ister.",
+        "care": "Tam güneşli yerleri ve zengin toprağı sever. Zehirli bir bitkidir.",
+        "grows_in_turkey": true,
+        "scientific_name": "Datura stramonium"
+    },
+    "morning_glory": {
+        "turkish_name": "Sabah Sefası",
+        "watering": "Toprağı sürekli nemli tutulmalıdır.",
+        "care": "Tam güneşli yerleri sever. Tırmanması için destek gerekir.",
+        "grows_in_turkey": true,
+        "scientific_name": "Ipomoea"
+    },
+    "passion_flower": {
+        "turkish_name": "Çarkıfelek Çiçeği",
+        "watering": "Büyüme döneminde düzenli ve bol sulama ister.",
+        "care": "Tam güneşli yerleri sever. Tırmanıcıdır.",
+        "grows_in_turkey": true,
+        "scientific_name": "Passiflora"
+    },
+    "lotus": {
+        "turkish_name": "Lotus (Nilüfer)",
+        "watering": "Suda yaşadığı için sulama gerekmez.",
+        "care": "Sığ sularda tam güneşli yerleri tercih eder.",
+        "grows_in_turkey": false,
+        "scientific_name": "Nelumbo nucifera"
+    },
+    "toad_lily": {
+        "turkish_name": "Kurbağa Zambağı",
+        "watering": "Toprağı sürekli nemli tutulmalıdır.",
+        "care": "Kısmi veya tam gölge yerleri sever. Serin iklim ister.",
+        "grows_in_turkey": false,
+        "scientific_name": "Tricyrtis"
+    },
+    "anthurium": {
+        "turkish_name": "Flamingo Çiçeği",
+        "watering": "Toprağın üst kısmı kuruyunca sulama yapılmalıdır. Kışın sulama azaltılır.",
+        "care": "Parlak dolaylı ışık ve yüksek nem ister. Soğuktan korunmalıdır.",
+        "grows_in_turkey": false,
+        "scientific_name": "Anthurium"
+    },
+    "frangipani": {
+        "turkish_name": "Hint Tapınağı Çiçeği",
+        "watering": "Yazın düzenli, kışın neredeyse hiç sulama yapılmamalıdır.",
+        "care": "Tam güneşli, sıcak ortamları ve iyi drene edilmiş toprağı sever.",
+        "grows_in_turkey": false,
+        "scientific_name": "Plumeria"
+    },
+    "clematis": {
+        "turkish_name": "Orman Asması",
+        "watering": "Toprağı sürekli nemli tutulmalıdır, özellikle kök kısmı.",
+        "care": "Güneşli tepeyi, gölgeli kökleri sever. Tırmanması için destek ister.",
+        "grows_in_turkey": true,
+        "scientific_name": "Clematis"
+    },
+    "hibiscus": {
+        "turkish_name": "Çin Gülü (Hibiskus)",
+        "watering": "Bol sulama ister, özellikle sıcak günlerde.",
+        "care": "Tam güneşli yerleri ve zengin toprağı sever. Soğuktan korunmalıdır.",
+        "grows_in_turkey": true,
+        "scientific_name": "Hibiscus rosa-sinensis"
+    },
+    "columbine": {
+        "turkish_name": "Baldıran Otu (Aquilegia)",
+        "watering": "Orta derecede sulama ister, toprağı nemli tutulmalıdır.",
+        "care": "Yarı gölge veya tam güneş alan yerleri sever.",
+        "grows_in_turkey": true,
+        "scientific_name": "Aquilegia"
+    },
+    "desert-rose": {
+        "turkish_name": "Çöl Gülü",
+        "watering": "Sulamadan önce toprağın tamamen kuruması beklenir.",
+        "care": "Bol güneş ve sıcak ortamları sever. Kışın koruma ister.",
+        "grows_in_turkey": false,
+        "scientific_name": "Adenium obesum"
+    },
+    "tree_mallow": {
+        "turkish_name": "Ağaç Ebegümeci",
+        "watering": "Toprağı kurudukça sulanmalıdır, kuraklığa dayanıklıdır.",
+        "care": "Tam güneşli ve rüzgardan korunaklı yerleri sever.",
+        "grows_in_turkey": true,
+        "scientific_name": "Lavatera trimestris"
+    },
+    "magnolia": {
+        "turkish_name": "Manolya",
+        "watering": "Özellikle genç fideler düzenli sulama ister.",
+        "care": "Güneşli veya hafif gölge alanları ve derin toprağı sever.",
+        "grows_in_turkey": true,
+        "scientific_name": "Magnolia"
+    },
+    "cyclamen": {
+        "turkish_name": "Siklamen (Sıklamen)",
+        "watering": "Toprağı nemli tutulmalı, çiçeğin üzerine su değdirilmemelidir.",
+        "care": "Serin ve aydınlık ortamları sever. Doğrudan güneş almamalıdır.",
+        "grows_in_turkey": true,
+        "scientific_name": "Cyclamen"
+    },
+    "watercress": {
+        "turkish_name": "Su Teresi Çiçeği",
+        "watering": "Sürekli su içinde veya çok nemli topraklarda olmalıdır.",
+        "care": "Serin ve gölgeli ortamları sever. Yarı su bitkisidir.",
+        "grows_in_turkey": true,
+        "scientific_name": "Nasturtium officinale"
+    },
+    "canna_lily": {
+        "turkish_name": "Kanna Zambağı",
+        "watering": "Bol ve düzenli sulama ister, toprağı sürekli nemli olmalıdır.",
+        "care": "Tam güneşli ve sıcak yerleri sever.",
+        "grows_in_turkey": false,
+        "scientific_name": "Canna"
+    },
+    "hippeastrum": {
+        "turkish_name": "Hippeastrum (Amaryllis)",
+        "watering": "Çiçeklenme döneminde düzenli sulama ister. Kışın sulama kesilmelidir.",
+        "care": "Parlak dolaylı ışık alan yerleri sever. Soğuktan korunmalıdır.",
+        "grows_in_turkey": false,
+        "scientific_name": "Hippeastrum"
+    },
+    "bee_balm": {
+        "turkish_name": "Arı Balsamı",
+        "watering": "Toprağı sürekli nemli tutulmalıdır.",
+        "care": "Güneşli veya yarı gölge alanları sever. İyi hava sirkülasyonu önemlidir.",
+        "grows_in_turkey": false,
+        "scientific_name": "Monarda didyma"
+    },
+    "pink_quill": {
+        "turkish_name": "Pembe Tüy Çiçeği",
+        "watering": "Orta düzeyde sulama ister, toprağın kurumasına izin verilmelidir.",
+        "care": "Parlak dolaylı ışık ve sıcak ortamları sever.",
+        "grows_in_turkey": false,
+        "scientific_name": "Tillandsia cyanea"
+    },
+    "foxglove": {
+        "turkish_name": "Yüksük Otu",
+        "watering": "Toprağı düzenli olarak nemli tutulmalıdır.",
+        "care": "Kısmi gölge ve zengin, nemli toprağı tercih eder. Zehirli bir bitkidir.",
+        "grows_in_turkey": true,
+        "scientific_name": "Digitalis"
+    },
+    "bougainvillea": {
+        "turkish_name": "Begonvil",
+        "watering": "Toprak tamamen kuruduktan sonra sulanmalıdır. Aşırı sulamadan kaçının.",
+        "care": "Tam güneşli, sıcak ortamları ve kuru havayı sever. Budama ile şekillendirilir.",
+        "grows_in_turkey": true,
+        "scientific_name": "Bougainvillea"
+    },
+    "camellia": {
+        "turkish_name": "Kamelya",
+        "watering": "Toprağı sürekli nemli tutulmalıdır.",
+        "care": "Yarı gölge ve asidik toprağı sever. Soğuktan korunmalıdır.",
+        "grows_in_turkey": false,
+        "scientific_name": "Camellia japonica"
+    },
+    "mallow": {
+        "turkish_name": "Ebegümeci",
+        "watering": "Kuraklığa dayanıklıdır, az sulama ister.",
+        "care": "Tam güneşli yerleri sever. Kolay bakımı vardır.",
+        "grows_in_turkey": true,
+        "scientific_name": "Malva"
+    },
+    "mexican_petunia": {
+        "turkish_name": "Meksika Petunyası",
+        "watering": "Toprağı nemli tutulmalıdır, ancak fazla suya dayanıklıdır.",
+        "care": "Tam güneşli veya kısmi gölge alanları sever. Hızlı yayılır.",
+        "grows_in_turkey": false,
+        "scientific_name": "Ruellia brittoniana"
+    },
+    "bromelia": {
+        "turkish_name": "Bromelya",
+        "watering": "Ortadaki çanağa su doldurulmalıdır. Toprağı hafif nemli tutulur.",
+        "care": "Parlak dolaylı ışık ve yüksek nem ister.",
+        "grows_in_turkey": false,
+        "scientific_name": "Bromeliaceae"
+    },
+    "blanket_flower": {
+        "turkish_name": "Battaniye Çiçeği (Gaillardia)",
+        "watering": "Kuraklığa çok dayanıklıdır. Az sulama ister.",
+        "care": "Tam güneşli yerleri ve sıcak ortamları sever.",
+        "grows_in_turkey": false,
+        "scientific_name": "Gaillardia"
+    },
+    "trumpet_creeper": {
+        "turkish_name": "Borazan Sarmaşığ",
+        "watering": "Kuraklığa dayanıklıdır. Toprak kurudukça sulanmalıdır.",
+        "care": "Tam güneşli yerleri sever. Tırmanması için sağlam destek ister.",
+        "grows_in_turkey": true,
+        "scientific_name": "Campsis radicans"
+    },
+    "blackberry_lily": {
+        "turkish_name": "Böğürtlen Zambağı (Leopar Çiçeği)",
+        "watering": "Kuraklığa dayanıklıdır. Fazla suya ihtiyacı yoktur.",
+        "care": "Tam güneşli yerleri sever. Bakımı kolaydır.",
+        "grows_in_turkey": false,
+        "scientific_name": "Iris domestica"
+    },
+    "californian_poppy": {
+        "turkish_name": "Kaliforniya Gelincik Çiçeği",
+        "watering": "Kuraklığa dayanıklıdır. Fazla sulamadan kaçınılmalıdır.",
+        "care": "Tam güneşli yerleri ve sıcak havayı sever.",
+        "grows_in_turkey": false,
+        "scientific_name": "Eschscholzia californica"
+    }
+}

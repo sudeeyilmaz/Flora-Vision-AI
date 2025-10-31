@@ -1,0 +1,11 @@
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+models/
+flower_image_embeddings.npy
+flowers_by_class/
+compare/
+*.jpg
+*.jpeg
