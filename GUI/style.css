@@ -429,3 +429,36 @@ h2 {
         max-width: 100%; /* Buton genişliğini mobil için ayarla */
     }
 }
+/* Sesli Asistan Butonu */
+.voice-button {
+    position: fixed; /* Sabit konum */
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    border: 3px solid white; /* Hafif bir sınır */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    z-index: 1000; /* Diğer elementlerin üzerinde kalmasını sağlar */
+}
+
+.voice-button:hover {
+    background-color: var(--primary-dark);
+    transform: scale(1.05);
+}
+
+.voice-button.listening {
+    background-color: #dc3545; /* Dinlerken kırmızı renk */
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(220, 53, 69, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(220, 53, 69, 0); }
+}

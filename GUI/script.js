@@ -8,7 +8,10 @@ const fileNameDisplay = document.getElementById('file-name-display');
 const videoUpload = document.getElementById('video-upload');
 const videoNameDisplay = document.getElementById('video-name-display');
 const analyzeVideoButton = document.getElementById('analyze-video-button');
+const voiceButton = document.getElementById('voice-button');
 
+const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+const SpeechSynthesis = window.speechSynthesis;
 let selectedFile = null;
 let selectedVideo = null;
 
@@ -22,9 +25,131 @@ analyzeVideoButton.innerHTML = videoButtonText;
 analyzeButton.disabled = true;
 analyzeVideoButton.disabled = true;
 
+// /static/script.js dosyasındaki global alana veya sesli asistan kod bloğunun başına ekleyin
 
+let trVoice = null; // En iyi Türkçe sesi bu değişkende tutacağız
+
+// Sesler yüklendiğinde çalışacak fonksiyon
+function setTurkishVoice() {
+    const voices = SpeechSynthesis.getVoices();
+    
+    // Tarayıcı bazen sesleri hemen yükleyemeyebilir. Yüklenmişse devam et.
+    if (voices.length === 0) return;
+    
+    // 1. Türkçe (tr-TR) sesleri filtrele
+    const turkishVoices = voices.filter(voice => voice.lang.startsWith('tr'));
+    
+    if (turkishVoices.length > 0) {
+        // 2. Mümkünse "Google" veya "Microsoft" gibi daha kaliteli isimli bir ses seçmeye çalış.
+        // Veya "local service" olmayanları tercih et (daha kaliteli cloud sesleri).
+        trVoice = turkishVoices.find(voice => voice.name.includes('Google') || voice.name.includes('Microsoft') || !voice.localService) || turkishVoices[0];
+        console.log("🗣️ Kullanılacak Türkçe Ses:", trVoice ? trVoice.name : "Varsayılan Türkçe Ses");
+    } else {
+        console.warn("🗣️ Türkçe ses bulunamadı. Varsayılan sistem sesi kullanılacak.");
+    }
+}
+
+// Seslerin yüklenmesini bekle. (Chrome'da ses listesi bazen gecikir.)
+SpeechSynthesis.onvoiceschanged = setTurkishVoice;
+
+// Sayfa yüklenir yüklenmez de bir kez dene (bazı tarayıcılar için gerekli)
+setTurkishVoice(); 
+
+// ... (Geri kalan kodlar devam ediyor) ...
 // --- Olay Dinleyicileri ---
+if (!SpeechRecognition) {
+    console.error("Tarayıcınız Web Speech Recognition API'yi desteklemiyor.");
+    // Butonu devre dışı bırakabilirsiniz
+    if (voiceButton) voiceButton.style.display = 'none';
+}
 
+if (voiceButton && SpeechRecognition) {
+    const recognition = new SpeechRecognition();
+    recognition.continuous = false; // Tek bir konuşma komutu
+    recognition.lang = 'tr-TR';     // Türkçe dil ayarı
+    recognition.interimResults = false;
+    
+    let isListening = false;
+
+    // Dinleme Başladığında
+    recognition.onstart = function() {
+        isListening = true;
+        voiceButton.classList.add('listening');
+        voiceButton.title = 'Dinleniyor... Konuşun.';
+    };
+
+    // Dinleme Bittiğinde
+    recognition.onend = function() {
+        isListening = false;
+        voiceButton.classList.remove('listening');
+        voiceButton.title = 'Sesli Asistanı Başlat';
+    };
+
+    // Konuşma tanındığında
+    recognition.onresult = function(event) {
+        const last = event.results.length - 1;
+        const queryText = event.results[last][0].transcript;
+        console.log('Tanınan Sorgu:', queryText);
+        
+        // FastAPI'ye sorguyu gönderme
+        sendQueryToAssistant(queryText);
+    };
+
+    // Hata oluştuğunda
+    recognition.onerror = function(event) {
+        console.error('Konuşma Tanıma Hatası:', event.error);
+        if (event.error === 'not-allowed') {
+             speakResponse("Mikrofon izni verilmedi. Lütfen tarayıcı ayarlarınızı kontrol edin.");
+        } else {
+             speakResponse("Üzgünüm, sizi anlayamadım.");
+        }
+    };
+
+    // Butona tıklandığında dinlemeyi başlat
+    voiceButton.addEventListener('click', () => {
+        if (!isListening) {
+            recognition.start();
+        } else {
+            recognition.stop();
+        }
+    });
+
+    // Asistanın konuşması için fonksiyon
+    function speakResponse(text) {
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = 'tr-TR';
+        
+        SpeechSynthesis.speak(utterance);
+    }
+    
+    // Sorguyu FastAPI endpoint'ine gönderen fonksiyon
+    async function sendQueryToAssistant(query) {
+        speakResponse("Lütfen bekleyin..."); // Kullanıcıya geri bildirim
+        
+        try {
+            const response = await fetch('/api/voice_assistant', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ query: query })
+            });
+
+            if (!response.ok) {
+                throw new Error('Asistan sunucusu hatası.');
+            }
+
+            const data = await response.json();
+            
+            // Cevabı sese çevir
+            speakResponse(data.response);
+
+        } catch (error) {
+            console.error("Asistan API hatası:", error);
+            speakResponse("Üzgünüm, sunucuda bir hata oluştu.");
+        }
+    }
+}
 // 1. Görüntü Seçildiğinde Önizleme
 fileUpload.addEventListener('change', (event) => {
     selectedFile = event.target.files[0];

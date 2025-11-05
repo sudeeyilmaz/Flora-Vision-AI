@@ -15,6 +15,10 @@ from fastapi.middleware.cors import CORSMiddleware
 import json
 import cv2
 import tempfile
+from pydantic import BaseModel
+
+class QueryModel(BaseModel):
+    query: str
 
 FLOWERS_FOLDER = "flowers_by_class" 
 TARGET_SIZE = (224, 224) 
@@ -69,6 +73,60 @@ try:
 except FileNotFoundError:
     print(f"❌ HATA: Vektör dosyası '{OUTPUT_FILE}' bulunamadı. Lütfen vektör çıkarma işlemini kontrol edin.")
     exit()
+# main.py dosyasının içine, diğer fonksiyonların altına
+
+def get_flower_details_by_name(flower_name_tr: str):
+    """Çevrilmiş isimden (Türkçe) çiçek detaylarını bulur."""
+    
+    # 1. Türkçeden İngilizce (orijinal) isme geri çevir
+    original_name = None
+    for eng, tr in FLOWER_NAME_TRANSLATIONS.items():
+        if tr.lower() == flower_name_tr.lower():
+            original_name = eng
+            break
+            
+    if not original_name:
+        # Belki direkt olarak flower_details.json'da Türkçe isim vardır
+        original_name = flower_name_tr
+        
+    flower_key = original_name.replace(' ', '_')
+    details = FLOWER_DETAILS.get(flower_key, None)
+    
+    return details, FLOWER_NAME_TRANSLATIONS.get(original_name, original_name)
+
+def simple_nlu(query: str) -> str:
+    query = query.lower().strip()
+    
+    if "teşekkürler" in query or "sağ ol" in query:
+        return "Rica ederim, size yardımcı olabildiğime sevindim."
+
+    if "merhaba" in query or "selam" in query:
+        return "Merhaba! Ben Çiçek Benzerlik Asistanınız. Bir çiçeğin bakımı veya benzerliği hakkında size nasıl yardımcı olabilirim?"
+
+    for flower_name_tr in FLOWER_NAME_TRANSLATIONS.values():
+        name_lower = flower_name_tr.lower()
+        if name_lower in query:
+            details, tr_name = get_flower_details_by_name(flower_name_tr)
+            
+            if "bakım" in query:
+                care_info = details.get('care', f"{tr_name} için detaylı bakım bilgisi bulunamadı.")
+                return f"{tr_name} bakımı hakkında: {care_info}"
+            
+            if "sulama" in query or "su" in query:
+                watering_info = details.get('watering', f"{tr_name} için sulama bilgisi bulunamadı.")
+                return f"{tr_name} için sulama bilgisi: {watering_info}"
+            
+            if "türkiye" in query or "yetişir" in query:
+                grows = "Evet, Türkiye'de yetişir." if details.get('grows_in_turkey') else "Hayır, yurtdışı türüdür."
+                return f"{tr_name} türü için: {grows}"
+
+    return "Üzgünüm, şu anda sadece yüklediğiniz çiçekler hakkındaki basit bakım ve sulama sorularına yanıt verebiliyorum."
+
+@app.post("/api/voice_assistant",summary="Sesli asistan ile çiçek bakımı hakkında sohbet eder.")
+async def voice_assistant_query(q:QueryModel):
+    response_text = simple_nlu(q.query)
+    return JSONResponse(content={"response": response_text})
+
 
 def extract_frames_from_video(video_bytes, frame_rate=1):
     with tempfile.NamedTemporaryFile(delete=False, suffix=".mp4") as tmp:
