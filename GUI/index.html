@@ -3,66 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Çiçek Benzerliği Bulucu</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Flora AI - Akıllı Çiçek Analizi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <div class="container">
-    <h1>Çiçek Benzerliği Bulucu</h1>
-    <button id="voice-button" class="voice-button" title="Sesli Asistanı Başlat">
-        <i class="fas fa-microphone"></i>
-    </button>
-    <p class="description">Yapay Zeka Destekli Görsel Arama</p>
+    
+    <div id="canvas-container"></div>
 
-    <div class="main-layout">
-        
-        <div class="left-panel">
-            <h2><i class="fas fa-camera"></i> Görsel Yükleme</h2>
-            
-            <div class="upload-section">
-                <label for="file-upload" class="upload-box">
-                    <i class="fas fa-cloud-upload-alt upload-icon"></i>
-                    <span>Bir görsel seçmek için tıklayın veya sürükleyin</span>
-                    <input type="file" id="file-upload" accept="image/*" class="hidden-input">
-                </label>
-                <div id="file-name-display" class="file-name-display">Henüz dosya seçilmedi.</div>
+    <div class="glass-container">
+        <header class="app-header">
+            <div class="logo">
+                <i class="fas fa-leaf"></i> Flora<span>AI</span>
             </div>
+            <p class="tagline">Yapay Zeka Destekli Botanik Rehberi</p>
+        </header>
 
-            <div class="preview-analysis-section">
-                <div class="image-preview-container">
-                    <img id="image-preview" src="#" alt="Önizleme" class="image-preview" style="display: none;">
+        <div class="main-content">
+            <div class="panel left-panel">
+                <div class="input-group">
+                    <h3><i class="fas fa-camera"></i> Görsel Analiz</h3>
+                    <label for="file-upload" class="drop-zone">
+                        <div class="drop-zone-content">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <span class="drop-text">Fotoğrafı Sürükle veya Seç</span>
+                            <span id="file-name-display" class="file-info">Dosya seçilmedi</span>
+                        </div>
+                        <input type="file" id="file-upload" accept="image/*" hidden>
+                    </label>
+                    <div class="preview-area" id="image-preview-wrapper" style="display: none;">
+                        <img id="image-preview" src="#" alt="Önizleme">
+                    </div>
+                    <button id="analyze-button" class="primary-btn" disabled>
+                        <span>Analiz Et</span>
+                        <div class="btn-shine"></div>
+                    </button>
                 </div>
-                <button id="analyze-button" class="analyze-button" disabled>
-                    <i class="fas fa-search"></i> Benzer Çiçekleri Bul
-                </button>
+
+                <div class="divider"><span>VEYA</span></div>
+
+                <div class="input-group">
+                    <h3><i class="fas fa-video"></i> Video Analiz</h3>
+                    <label for="video-upload" class="drop-zone video-zone">
+                        <div class="drop-zone-content">
+                            <i class="fas fa-film"></i>
+                            <span class="drop-text">Video Yükle</span>
+                            <span id="video-name-display" class="file-info">Video seçilmedi</span>
+                        </div>
+                        <input type="file" id="video-upload" accept="video/*" hidden>
+                    </label>
+                    <button id="analyze-video-button" class="primary-btn video-btn" disabled>
+                        <span>Videoyu Tara</span>
+                    </button>
+                </div>
             </div>
-            <h2><i class="fas fa-video"></i> Video Yükleme</h2>
 
-<div class="upload-section">
-    <label for="video-upload" class="upload-box">
-        <i class="fas fa-cloud-upload-alt upload-icon"></i>
-        <span>Bir video seçmek için tıklayın veya sürükleyin</span>
-        <input type="file" id="video-upload" accept="video/*" class="hidden-input">
-    </label>
-    <div id="video-name-display" class="file-name-display">Henüz video seçilmedi.</div>
-</div>
-
-<button id="analyze-video-button" class="analyze-button" disabled>
-    <i class="fas fa-search"></i> Videodaki Benzer Çiçekleri Bul
-</button>
-        </div> 
-        
-        <div class="right-panel">
-            <h2><i class="fas fa-seedling"></i> En Benzer Sonuçlar</h2>
-            <div id="results-gallery" class="results-gallery">
-                <p>Henüz bir analiz yapılmadı. Sol panelden bir çiçek görseli yükleyin.</p>
+            <div class="panel right-panel">
+                <div class="results-header">
+                    <h2>Analiz Sonuçları</h2>
+                    <div class="pulse-indicator"></div>
+                </div>
+                <div id="results-gallery" class="results-grid">
+                    <div class="empty-state">
+                        <i class="fas fa-seedling"></i>
+                        <p>Yapay zeka analizi için sol taraftan bir medya yükleyin.</p>
+                    </div>
+                </div>
             </div>
         </div>
-        
     </div>
+
+    <div id="chat-modal" class="chat-modal hidden">
+        <div class="chat-header">
+            <div class="chat-title">
+                <i class="fas fa-robot"></i>
+                <span id="chat-flower-name">Botanik Asistanı</span>
+            </div>
+            <button id="close-chat" class="close-btn"><i class="fas fa-times"></i></button>
+        </div>
+        <div id="chat-messages" class="chat-messages">
+            <div class="message bot">
+                Merhaba! Ben Flora AI. Seçtiğiniz çiçek hakkında bana soru sorabilirsiniz.
+            </div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Bir soru sorun...">
+            <button id="send-btn"><i class="fas fa-paper-plane"></i></button>
+        </div>
     </div>
+
     <script src="/static/script.js"></script>
+    <script src="/static/3d-background.js"></script>
 </body>
 </html>
