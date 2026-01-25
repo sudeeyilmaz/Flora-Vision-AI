@@ -35,19 +35,23 @@ This full-stack web application allows users to upload a flower image to find vi
 
 ## ⚙️ Installation & Usage
 **1.** Clone the repository
+```bash
 git clone [https://github.com/sudeeyilmaz/Flora-Vision-AI.git](https://github.com/sudeeyilmaz/Flora-Vision-AI.git)
 cd Flora-Vision-AI
-
+```
 **2.** Install Dependencies
+```bash
 pip install -r requirements.txt
+```
 **3.** Prepare the Dataset
 Ensure the Oxford Flower Dataset images and labels (imagelabels.mat) are placed in the correct directory. You may need to run the embedding generator first:
 python embedding.py
 
 **4.** Run the Application
 Start the FastAPI server:
+```bash
 uvicorn main:app --reload
-
+```
 **5.** Access the Web UI
 Open your browser and navigate to: http://127.0.0.1:8000
 
