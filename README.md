@@ -29,7 +29,7 @@ This full-stack web application allows users to upload a flower image to find vi
 ├── requirements.txt        # Python dependencies
 └── ...                     # Dataset helper scripts (csv_make.py, group.py)
 ```
-<img width="1344" height="643" alt="Screenshot From 2026-01-25 17-43-57" src="https://github.com/user-attachments/assets/f4f57edb-e121-40d6-a9a9-dcba281f8771" />
+<img width="1344" height="643" alt="Screenshot From 2026-01-25 17-42-25" src="https://github.com/user-attachments/assets/7aa046b2-c3df-4f00-aba0-c6e3c3e8f43b" />
 <img width="1344" height="643" alt="Screenshot From 2026-01-25 17-44-50" src="https://github.com/user-attachments/assets/b1f5bf05-89e4-4b8f-9f7b-ac6409775680" />
 <img width="853" height="615" alt="Screenshot From 2026-01-25 17-46-24" src="https://github.com/user-attachments/assets/164ad785-c8d7-47fa-9aa8-495ad4a21359" />
 
