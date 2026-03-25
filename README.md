@@ -35,12 +35,12 @@ This full-stack web application allows users to upload a flower image to find vi
 
 ## ⚙️ Installation & Usage
 **1.** Clone the repository
-```bash
-git clone [https://github.com/sudeeyilmaz/Flora-Vision-AI.git](https://github.com/sudeeyilmaz/Flora-Vision-AI.git)
+```
+git clone https://github.com/sudeeyilmaz/Flora-Vision-AI.git
 cd Flora-Vision-AI
 ```
 **2.** Install Dependencies
-```bash
+```
 pip install -r requirements.txt
 ```
 **3.** Prepare the Dataset
